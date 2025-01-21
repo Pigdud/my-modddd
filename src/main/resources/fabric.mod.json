@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "betterend",
+	"version": "${version}",
+	"name": "betterend",
+	"description": "This is better end dimension!!! This is also my personal project, and I hope you like my mod!",
+	"authors": [
+		"Pigdudu"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/Pigdud/mymodddd"
+	},
+	"license": "PIG",
+	"icon": "assets/betterend/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.pigdudu.betterend.Betterend"
+		],
+		"fabric-datagen": [
+			"net.pigdudu.betterend.BetterendDataGenerator"
+		],
+		"client": [
+			"net.pigdudu.betterend.modclient"
+		]
+	},
+	"mixins": [
+		"betterend.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
